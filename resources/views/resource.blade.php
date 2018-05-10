@@ -111,8 +111,7 @@
 	    	@if(isset($timeResources))
 		    	<p class='infos'>
 		    		<b>Horas alocadas:</b> {{ App\Http\Controllers\Controller::minutosToHour($timeResources) }}h | 
-		    		<b>Horas trabalhadas:</b> {{ App\Http\Controllers\Controller::minutosToHour($timeDay) }}h | 
-		    		<b>Livre:</b> {{  App\Http\Controllers\Controller::minutosToHour($timeResources-$timeDay) }}
+		    		<b>Horas trabalhadas:</b> {{ App\Http\Controllers\Controller::minutosToHour($timeDay) }}h
 		    	</p>
 		    @endif
 	    </div>
